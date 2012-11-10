@@ -1,0 +1,74 @@
+URxvt*imlocale: zh_CN
+XTerm*locale: true
+URxvt.multichar_encoding:utf8
+urxvt*termName: rxvt
+
+!! 设置输入法的输入风格。不设置这个的话，启动会很慢。
+Rxvt.preeditType:Root
+!URxvt.preeditType:OverTheSpot
+!! 设置输入法，这里要注意如果用scim的话，必须要大写，否则调不出输入法，但是我改用ibus，这个选项就不需要了。
+!! URxvt.inputMethod: SCIM
+URxvt.inputMethod: ibus
+
+URxvt.scrollTtyOutput: False
+URxvt.scrollTtyKeypress: True
+URxvt.scrollWithBuffer: True
+
+!! 字体
+!! XTerm*wideFont: -misc-simsun-medium-r-normal--0-0-0-0-c-0-iso10646-1
+!! XTerm*wideFont: -misc-simsun-large-r-normal--0-0-0-0-c-0-iso10646-1
+!! 字体
+!! URxvt.font:xft:Monaco:size=10:antialias=true,xft:LiHei Pro:size=10:antialias=true
+!! URxvt.boldFont:xft:Monaco:Bold:size=10:antialias=true,xft:LiHei Pro:Bold:size=10:antialias=true
+!! URxvt.font:            xft:DejaVuSansYuanTiMono:Bold:size=9
+!设置字体分辨率
+Xft.dpi:96
+!设置字体
+URxvt.font:-misc-fixed-medium-r-normal--14-*-*-*-*-*-iso10646-1,xft:WenQuanYi Bitmap Song:size=10 
+!颜色
+!! Rxvt.background:black
+Rxvt.background:#101010
+Rxvt.foreground:gray
+!! Rxvt.colorBD:yellow
+Rxvt.colorUL:green
+!滚动条
+!! Rxvt.scrollBar:True
+!! Rxvt.scrollBar_right:True
+!! Rxvt.scrollBar_floating: False
+!! Rxvt.scrollstyle:plain
+!屏幕缓冲
+Rxvt.saveLines:10000
+Rxvt.color12:DodgerBlue
+!! Rxvt.menu:/etc/X11/rxvt.menu
+
+
+!! 支持tab
+!! Tab切换 :: SHIFT+LEFT/SHIFT+RIGHT
+!! 移动Tab顺序 :: CTRL+LEFT/CTRL+RIGHT
+!! 新建Tab :: SHIFT+DOWN
+URxvt.perl-ext-common: default,tabbed
+
+
+!! 默认启动utf8支持，可以通过ESC键来开关。
+!! XTerm*utf8: 1
+!! 字体设置
+!! XTerm*faceName:monaco-10:charwidth=10
+!! CJK字体设置
+!! XTerm*faceNameDoublesize:lihei pro-10:charwidth=16
+
+!! 不要scrollbar
+!! URxvt.scrollBar:False
+!! URxvt.scrollWithBuffer: false
+!! URxvt.saveLines:3000
+!! 这个相当于css中的padding
+!! URxvt.internalBorder: 4
+
+
+!! 透明效果
+!! Rxvt.transparent:true
+!! Rxvt.shading:30
+
+!! URxvt.title:URxvrt
+!! URxvt.depth:32
+!! URxvt.background:rgba:0000/0000/0000/dddd
+!! URxvt.background:rgba:0000/0000/0000/0000

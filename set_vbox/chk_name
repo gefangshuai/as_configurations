@@ -1,0 +1,14 @@
+chk_name() {
+	# return with error 1 if parameters mismatch
+	[ $# = 2 ] || {
+		echo "chk_name: Error: parameter mismatch."
+		return 1
+	}
+	# return with error 2 if invalid device name given
+	echo $1 | sed "s/^$2[0-9][0-9]*$//"\
+	| grep -Eq '.+' && {
+	    echo "chk_name: Error: $1 is no a valid $2 device name."
+	    return 2
+	}
+	return 0
+}

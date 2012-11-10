@@ -1,0 +1,184 @@
+#! /bin/sh
+# InnoTek VirtualBox
+# Linux kernel module init script
+#
+# Copyright (C) 2006 InnoTek Systemberatung GmbH
+#
+# This file is part of VirtualBox Open Source Edition (OSE), as
+# available from http://www.virtualbox.org. This file is free software;
+# you can redistribute it and/or modify it under the terms of the GNU
+# General Public License as published by the Free Software Foundation,
+# in version 2 as it comes in the "COPYING" file of the VirtualBox OSE
+# distribution. VirtualBox OSE is distributed in the hope that it will
+# be useful, but WITHOUT ANY WARRANTY of any kind.
+#
+# If you received this file as part of a commercial VirtualBox
+# distribution, then only the terms of your commercial VirtualBox
+# license agreement apply instead of the previous paragraph.
+
+
+# chkconfig: 35 30 60
+# description: VirtualBox Linux kernel module
+#
+### BEGIN INIT INFO
+# Provides:       virtualbox
+# Required-Start: $syslog
+# Required-Stop:
+# Default-Start:  3 5
+# Default-Stop:
+# Description:    VirtualBox Linux kernel module
+### END INIT INFO
+
+PATH=$PATH:/bin:/sbin:/usr/sbin
+
+system=unknown
+if [ -f /etc/redhat-release ]; then
+  system=redhat
+elif [ -f /etc/SuSE-release ]; then
+  system=suse
+else
+  echo "$0: Unknown system" 1>&2
+fi
+
+if [ "$system" = "redhat" ]; then
+  . /etc/init.d/functions
+  fail_msg()
+  {
+    echo_failure
+    echo
+  }
+  succ_msg()
+  {
+    echo_success
+    echo
+  }
+  begin()
+  {
+    echo -n $1
+  }
+fi
+if [ "$system" = "suse" ]; then
+  . /etc/rc.status
+  fail_msg()
+  {
+    rc_failed 1
+    rc_status -v
+  }
+  succ_msg()
+  {
+    rc_reset
+    rc_status -v
+  }
+  begin()
+  {
+    echo -n $1
+  }
+fi
+
+KDIR="/lib/modules/`uname -r`/misc"
+DEVICE=/dev/vboxdrv
+MODNAME=vboxdrv
+MODULE="$KDIR/$MODNAME"
+GROUPNAME=vboxusers
+
+FILE=""
+test -f $MODULE.o  && FILE=$MODULE.o
+test -f $MODULE.ko && FILE=$MODULE.ko
+
+fail()
+{
+  fail_msg
+  echo "($1)"
+  exit 1
+}
+
+running()
+{
+  lsmod | grep -q $MODNAME[^_-]
+}
+
+start()
+{
+  begin "Starting VirtualBox kernel module ";
+  # ensure the module is loadd
+  if ! running; then
+    if [ -z "$FILE" ]; then
+      fail "Kernel module not found"
+    fi
+    if ! modprobe $MODNAME; then
+      fail "modprobe $MODNAME failed"
+    fi
+    sleep .2
+  fi
+  if [ ! -c $DEVICE ]; then
+    MAJOR=`sed -n 's;\([0-9]\+\) vboxdrv;\1;p' /proc/devices`
+    if [ ! -z "$MAJOR" ]; then
+      MINOR=0
+    else
+      MINOR=`sed -n 's;\([0-9]\+\) vboxdrv;\1;p' /proc/misc`
+      if [ ! -z "$MINOR" ]; then
+        MAJOR=10
+      fi
+    fi
+    if [ -z "$MAJOR" ]; then
+      rmmod $MODNAME
+      fail "Cannot locate the VirtualBox device"
+    fi
+    if ! mknod -m 0664 $DEVICE c $MAJOR $MINOR; then
+      rmmod $MODNAME
+      fail "Cannot create device $DEVICE with major $MAJOR and minor $MINOR"
+    fi
+  fi
+  # ensure permissions
+  if ! chown :$GROUPNAME $DEVICE; then
+    rmmod $MODNAME
+    fail "Cannot change owner $GROUPNAME for device $DEVICE"
+  fi
+  succ_msg
+
+	# added by kenny
+	grep tap /proc/net/dev || /usr/local/set_vbox/set_tun.sh up
+
+  return 0
+}
+
+stop()
+{
+  begin "Stopping VirtualBox kernel module ";
+  killall -q VBoxSVC
+  if running; then
+    if ! rmmod $MODNAME; then
+      fail "Cannot unload module $MODNAME"
+    fi
+    if ! rm -f $DEVICE; then
+      fail "Cannot unlink $DEVICE"
+    fi
+  fi
+  succ_msg
+  return 0
+}
+
+case "$1" in
+  start)
+    start
+    ;;
+  stop)
+    stop
+    ;;
+  restart)
+    stop && start
+    exit 0
+    ;;
+  status)
+    if running; then
+      echo "VirtualBox kernel module is loaded."
+    else
+      echo "VirtualBox kernel module is not loaded."
+    fi
+    ;;
+  *)
+    echo "Usage: $0 {start|stop|restart|status}"
+    exit 1
+esac
+
+exit 0

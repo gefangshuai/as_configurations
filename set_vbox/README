@@ -1,0 +1,115 @@
+- about scripts:
+	author:	netman <netman@study-area.org>
+	date:	2007-03-21
+
+- caveate:
+	* run scripts by root, or users who have sudo 'NOPASSWD:' priviledge
+	* 	also comment out line '#Defaults    requiretty' in /etc/sudoers
+	* needs packages uml-utilities, bridge-utils and compat-libstdc++
+
+- file list:
+
+	README
+		this file
+
+	set_br.sh
+		script to bring up/down bride device
+		Usage:
+			set_br.sh {<up|down|force-down> [-b br] [-e eth] [-d]} 
+		Options:
+			up:	bring up
+			down:	bring down
+			-b br:	specify br_dev name
+			-e eth:	specify eth_dev name
+			-d:	force to dhcp mode
+
+	set_tap.sh
+		script to bring up/down tap device
+		Usage:
+			set_tap.sh {<up|down|reset> [-t tap] [-b br] [-e eth]}
+		Options:
+			up:	bring up
+			down: 	bring down
+			reset:	down then up
+			-t tap: specify tap_dev name
+			-b br:	specify br_dev name
+			-e eth:	specify eth_dev name
+
+	set_tun.sh
+		script to bring up/down tun device
+		Usage:
+			set_tun.sh {<up|down> [-u user] [-g group] [-d dir] [-t tap|-c count]}
+		Options:
+			up:	bring up
+			down: 	bring down
+			-u user: account to run vbox
+			-g group: group to run vbox
+			-d dir:	directory which contains vbox machines' settings
+			-t tap: specify tap_dev name
+			-c count: numbers of total tap device
+
+	set_vbox.conf
+		pre-defined default variables
+			vbox_group=	# vbox group
+			vbox_user=	# vbox user
+			vbox_conf_dir=	# vbox Machines config directory
+			eth_dev=	# ether device
+			br_dev=		# bridge device
+			tap_dev=	# tap device
+
+	set_vmfw.sh
+		script to bring up/down firewall settings (read caveate in the script)
+		Usage:
+			set_vmfw.sh {<up|down> [-r]}
+		Options:
+			up:	bring up
+			down: 	bring down
+			-r:	reset firewall first
+
+	tap_down.sh
+		script to bring up tap, called by virtualbox automation
+
+	tap_up.sh
+		script to bring down tap, called by virtualbox automation
+
+- execution order:
+	1)
+		run 'set_tup.sh up' on boot
+	2)
+		skipp to step 5 if called by virtualbox automation,
+		otherwise continue to next step.
+	3)
+		run 'set_br.sh up'
+	4)
+		run 'set_tap.sh up'
+	5)
+		start virtualbox program
+	6)
+		(optional) run 'set_vmfw.sh up'
+
+- manual operation:
+    * initial
+	# groupadd vbousers
+	# gpasswd -a user vboxusers #OR: groupmod -A user vboxusers
+    * set up after every reboot
+	# chgrp vboxuses /dev/net/tun
+	# chmod 0660 /dev/net/tun
+	# tunctl -t tap0 -u user
+	# brctl addbr br0
+	# dhclient -r eth0
+	# ifdown eth0
+	# ifconfig eth0 0.0.0.0 promisc
+	# ifconfig tap0 0.0.0.0 promisc
+	# brctl addif br0 eth0
+	# brctl addif br0 tap0
+	# dhclient br0		# OR: run ifconfig & route manually
+    * set down
+	# dhclient -r br0
+	# brctl delif br0 eth0
+	# brctl delif br0 tap0
+	# ifconfig tap0 down
+	# ifconfig br0 down
+	# brctl delbr br0
+	# dhclient eth0		# OR: run ifconfig & route manually
+
+== EOF ==

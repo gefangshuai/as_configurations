@@ -1,0 +1,10 @@
+"3.5 (created: 2012/08/04 00:41:20)
+
+source! /home/as/.vimperatorrc.local
+
+set incsearch
+set hlsearch
+set hinttimeout=8000
+
+" vim: set ft=vimperator:
+

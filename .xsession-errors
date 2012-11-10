@@ -1,0 +1,199 @@
+Running X session wrapper
+Loading profile from /etc/profile
+Smart Common Input Method 1.4.9
+
+Launching a SCIM daemon with Socket FrontEnd...
+Loading simple Config module ...
+Creating backend ...
+Loading socket FrontEnd module ...
+Starting SCIM as daemon ...
+Launching a SCIM process with x11...
+Loading socket Config module ...
+Creating backend ...
+Loading x11 FrontEnd module ...
+GTK Panel of SCIM 1.4.9
+
+Starting SCIM as daemon ...
+SCIM has been successfully launched.
+Loading profile from /home/andersen/.profile
+Loading resource: /etc/X11/Xresources/x11-common
+Loading resource: /etc/X11/Xresources/xlockmore
+Loading resource: /etc/X11/Xresources/xpdf
+Loading X session script /etc/X11/Xsession.d/20x11-common_process-args
+Loading X session script /etc/X11/Xsession.d/30x11-common_xresources
+Loading X session script /etc/X11/Xsession.d/40x11-common_xsessionrc
+Loading X session script /etc/X11/Xsession.d/50_check_unity_support
+Loading X session script /etc/X11/Xsession.d/50x11-common_determine-startup
+Loading X session script /etc/X11/Xsession.d/52libcanberra-gtk3-module_add-to-gtk-modules
+Loading X session script /etc/X11/Xsession.d/52libcanberra-gtk-module_add-to-gtk-modules
+Loading X session script /etc/X11/Xsession.d/55gnome-session_gnomerc
+Loading X session script /etc/X11/Xsession.d/60x11-common_localhost
+Loading X session script /etc/X11/Xsession.d/60x11-common_xdg_path
+Loading X session script /etc/X11/Xsession.d/60xdg-user-dirs-update
+Loading X session script /etc/X11/Xsession.d/65compiz_profile-on-session
+Loading X session script /etc/X11/Xsession.d/70gconfd_path-on-session
+Loading X session script /etc/X11/Xsession.d/75dbus_dbus-launch
+Loading X session script /etc/X11/Xsession.d/80appmenu
+Loading X session script /etc/X11/Xsession.d/80appmenu-gtk3
+Loading X session script /etc/X11/Xsession.d/80im-switch
+Setting IM through im-switch for locale=en_US.
+Start IM through /etc/X11/xinit/xinput.d/all_ALL linked to /etc/X11/xinit/xinput.d/default.
+Loading X session script /etc/X11/Xsession.d/90consolekit
+Loading X session script /etc/X11/Xsession.d/90x11-common_ssh-agent
+Loading X session script /etc/X11/Xsession.d/99x11-common_start
+[fvwm][CMD_SnapAttraction]: <<DEPRECATED>> The command SnapAttraction is obsolete. Please use the following command instead:
+[fvwm][]: <<DEPRECATED>> Style * SnapAttraction 20 All Screen
+FvwmButtons: No buttons defined. Quitting
+Loading socket Config module ...
+Creating backend ...
+Loading x11 FrontEnd module ...
+Failed to load x11 FrontEnd module.
+AUP timeline: Entered aup.init()                      	 (first event)
+AUP timeline: * calling prefs.init()                  	 (0)
+AUP timeline: * calling filterListener.init()         	 (2)
+AUP timeline: * calling proxy.init()                  	 (0)
+AUP timeline: * calling filterStorage.init()          	 (1)
+AUP timeline: * Entered filterStorage.loadFromDisk()  	 (0)
+AUP timeline: * * done locating patterns.ini file     	 (0)
+AUP timeline: * * done parsing file                   	 (239)
+AUP timeline: * * load complete, calling observers    	 (0)
+AUP timeline: * filterStorage.loadFromDisk() done     	 (44)
+AUP timeline: * calling policy.init()                 	 (0)
+AUP timeline: * calling synchronizer.init()           	 (1)
+AUP timeline: aup.init() done                         	 (0)
+Loading socket Config module ...
+Creating backend ...
+Loading x11 FrontEnd module ...
+Failed to load x11 FrontEnd module.
+
+(plugin-container:1822): GLib-GObject-CRITICAL **: g_object_get_qdata: assertion `G_IS_OBJECT (object)' failed
+
+(plugin-container:1822): GLib-GObject-WARNING **: invalid unclassed pointer in cast to `GtkWindow'
+
+(plugin-container:1822): Gtk-CRITICAL **: IA__gtk_window_get_type_hint: assertion `GTK_IS_WINDOW (window)' failed
+
+(plugin-container:1822): GLib-GObject-CRITICAL **: g_object_get_qdata: assertion `G_IS_OBJECT (object)' failed
+
+(plugin-container:1822): GLib-GObject-WARNING **: invalid unclassed pointer in cast to `GtkWindow'
+
+(plugin-container:1822): Gtk-CRITICAL **: IA__gtk_window_get_decorated: assertion `GTK_IS_WINDOW (window)' failed
+
+(plugin-container:1822): GLib-GObject-WARNING **: invalid unclassed pointer in cast to `GtkWidget'
+
+(plugin-container:1822): Gtk-CRITICAL **: IA__gtk_widget_get_toplevel: assertion `GTK_IS_WIDGET (widget)' failed
+
+(plugin-container:1822): GLib-GObject-CRITICAL **: g_object_unref: assertion `G_IS_OBJECT (object)' failed
+[2082:2124:9804756356:ERROR:download_updates_command.cc(105)] PostClientToServerMessage() failed during GetUpdates
+[2082:2082:9804757229:ERROR:data_type_manager_impl.cc(279)] Bookmarks, Sync Error: Download failed
+[2082:2082:9804757355:ERROR:profile_sync_service.cc(1405)] ProfileSyncService error: Sync configuration failed with status Unrecoverable Error during Bookmarks: Download failed
+[2082:2082:9804757580:ERROR:profile_sync_service.cc(540)] Unrecoverable error detected at chrome/browser/sync/glue/data_type_manager_impl.cc[279] DownloadReady  -- ProfileSyncService unusable: Sync configuration failed with status Unrecoverable Error during Bookmarks: Download failed
+
+(exe:2142): GLib-GObject-CRITICAL **: g_object_get_qdata: assertion `G_IS_OBJECT (object)' failed
+
+(exe:2142): GLib-GObject-WARNING **: invalid unclassed pointer in cast to `GtkWindow'
+
+(exe:2142): Gtk-CRITICAL **: IA__gtk_window_get_type_hint: assertion `GTK_IS_WINDOW (window)' failed
+
+(exe:2142): GLib-GObject-CRITICAL **: g_object_get_qdata: assertion `G_IS_OBJECT (object)' failed
+
+(exe:2142): GLib-GObject-WARNING **: invalid unclassed pointer in cast to `GtkWindow'
+
+(exe:2142): Gtk-CRITICAL **: IA__gtk_window_get_decorated: assertion `GTK_IS_WINDOW (window)' failed
+
+(exe:2142): GLib-GObject-WARNING **: invalid unclassed pointer in cast to `GtkWidget'
+
+(exe:2142): Gtk-CRITICAL **: IA__gtk_widget_get_toplevel: assertion `GTK_IS_WIDGET (widget)' failed
+
+(exe:2142): GLib-GObject-CRITICAL **: g_object_unref: assertion `G_IS_OBJECT (object)' failed
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[fvwm][ComplexFunction]: <<ERROR>> Grab failed in function EWMHActivateWindowFunc, unable to execute immediate action
+[[32m[1m15:00:47[0m]  Read proxy information
+[[32m[1m15:00:47[0m]  Loading user list store in local data file
+[[32m[1m15:00:49[0m]  Set a initialized Config Struct to User
+[[32m[1m15:00:49[0m]  Initialize ssi authentication action
+[[32m[1m15:00:49[0m]  221.130.45.212:443
+[[32m[1m15:00:49[0m]  Start ssi login with v3Temp password , user number 13816956163
+[[32m[1m15:00:49[0m]  SSI login success
+[[32m[1m15:00:49[0m]  Load configuration
+[[32m[1m15:00:49[0m]  221.130.45.201:80
+[[32m[1m15:00:49[0m]  Save configuration
+[[32m[1m15:00:50[0m]  Load user information
+[[32m[1m15:00:50[0m]  Load contact list
+[[32m[1m15:00:50[0m]  58.68.229.68:8080
+[[32m[1m15:00:50[0m]  Set a initialized Sip Struct to User
+[[32m[1m15:00:50[0m]  Initialize sipc registeration action
+[[32m[1m15:00:50[0m]  Start registering to sip server(58.68.229.68:8080)
+[[32m[1m15:00:50[0m]  Register to sip server success
+[[32m[1m15:00:50[0m]  nonce:56563C2C6705849B4012ED0A19BB7113
+[[32m[1m15:00:50[0m]  Start encrypting response
+[[32m[1m15:00:50[0m]  Encrypting reponse success
+[[32m[1m15:00:50[0m]  Initialize sipc authencation action
+[[32m[1m15:00:50[0m]  Start sipc authentication , with ak-value
+[[32m[1m15:00:50[0m]  Got sipc response
+[[32m[1m15:00:50[0m]  Sipc authentication success
+[[32m[1m15:00:50[0m]  Start reading contact list 
+[[32m[1m15:00:50[0m]  Contact list is the same as that stored in the local disk!
+[[32m[1m15:00:50[0m]  221.130.44.232:80
+[[32m[1m15:00:50[0m]  Start subscribe contact list
+[[32m[1m15:00:50[0m]  A new thread entered
+[[32m[1m15:02:01[0m]  send a keep alive request
+[[32m[1m15:03:11[0m]  send a keep alive request
+[[32m[1m15:04:21[0m]  send a keep alive request
+[[32m[1m15:05:31[0m]  send a keep alive request
+[[32m[1m15:06:41[0m]  send a keep alive request
+[[32m[1m15:07:51[0m]  send a keep alive request
+[[32m[1m15:09:01[0m]  send a keep alive request
+[[32m[1m15:10:11[0m]  send a keep alive request
+[[32m[1m15:11:21[0m]  send a keep alive request
+[[32m[1m15:11:54[0m]  CREATE A NEW MESSAGE THREAD
+[[32m[1m15:11:54[0m]  58.68.229.25:8080
+[[32m[1m15:11:54[0m]  A new thread entered
+[[32m[1m15:11:54[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:12:31[0m]  send a keep alive request
+[[32m[1m15:12:42[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:13:20[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:13:41[0m]  send a keep alive request
+[[32m[1m15:13:46[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:14:24[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:14:37[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:14:41[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:14:51[0m]  send a keep alive request
+[[32m[1m15:14:53[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:15:10[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:15:43[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:16:01[0m]  send a keep alive request
+[[32m[1m15:16:39[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:16:42[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:16:46[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:16:49[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:17:01[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:17:11[0m]  send a keep alive request
+[[32m[1m15:17:33[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:18:04[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:18:20[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:18:21[0m]  send a keep alive request
+[[32m[1m15:18:27[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:19:21[0m]  Sent a message to sip:577892114@fetion.com.cn;p=3545
+[[32m[1m15:19:31[0m]  send a keep alive request
+[[32m[1m15:20:41[0m]  send a keep alive request
+[[32m[1m15:21:51[0m]  send a keep alive request
+[[32m[1m15:22:00[0m]  Removing chat struct from chat list
+[[32m[1m15:23:01[0m]  send a keep alive request
+
+(exe:2142): GLib-GObject-CRITICAL **: g_object_get_qdata: assertion `G_IS_OBJECT (object)' failed
+
+(exe:2142): GLib-GObject-WARNING **: invalid uninstantiatable type `(null)' in cast to `GtkWindow'
+
+(exe:2142): Gtk-CRITICAL **: IA__gtk_window_get_type_hint: assertion `GTK_IS_WINDOW (window)' failed
+
+(exe:2142): GLib-GObject-CRITICAL **: g_object_get_qdata: assertion `G_IS_OBJECT (object)' failed
+
+(exe:2142): GLib-GObject-WARNING **: invalid uninstantiatable type `(null)' in cast to `GtkWindow'
+
+(exe:2142): Gtk-CRITICAL **: IA__gtk_window_get_decorated: assertion `GTK_IS_WINDOW (window)' failed
+
+(exe:2142): GLib-GObject-WARNING **: invalid uninstantiatable type `(null)' in cast to `GtkWidget'
+
+(exe:2142): Gtk-CRITICAL **: IA__gtk_widget_get_toplevel: assertion `GTK_IS_WIDGET (widget)' failed
+
+(exe:2142): GLib-GObject-CRITICAL **: g_object_unref: assertion `G_IS_OBJECT (object)' failed
