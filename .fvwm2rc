@@ -21,6 +21,7 @@ Style *           FocusFollowsMouse
 Style *           TileCascadePlacement
 Style *           NoTitle
 
+Style xclock      Sticky
 Style Fvwm*       NoTitle,  Sticky, WindowListSkip
 Style Fvwm*       BorderWidth 2, CirculateSkipIcon, CirculateSkip
 Style FvwmPager   StaysOnTop
@@ -100,8 +101,8 @@ Mouse 3 TSIF    A       RaiseLower
 
 ######################## Initialization Functions ############################
 AddToFunc StartFunction
-+ I Module FvwmButtons
-+ I Module FvwmWinList
+# + I Module FvwmButtons
+# + I Module FvwmWinList
 # + I Exec exec `qiv -x -m /home/as/Pictures/bg11.png`
 # + I Exec exec `fvwm-root /home/as/Pictures/bg11.png`
 # + I Module FvwmPager
@@ -177,7 +178,7 @@ AddToMenu MenuTool
 + "&V. $[gt.Virtualbox]"       Exec exec virtualbox
 + "&O. $[gt.Xosview]"          Exec exec xosview -page +battery -ints +net
 # + "&X. $[gt.xdiagnose]"        Exec exec xdiagnose
-+ "&T. $[gt.Xclock]"           Exec exec xclock -update 1 -geometry 700x700+0+0
++ "&T. $[gt.Xclock]"           Exec exec xclock -update 1 -geometry 100x100-0+0
 
 DestroyMenu MenuIM
 AddToMenu MenuIM
