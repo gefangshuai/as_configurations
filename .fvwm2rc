@@ -48,6 +48,7 @@ Key Next         A       SCM     Next [*] Focus
 Key Prior        A       SCM     Prev [*] Focus
 # Key Super_L A A WindowList
 Key Super_L A A Menu MenuFvwmRoot Nop
+Key Super_R A A WindowList Root c c NoDeskSort
 Key 1 A M GotoPage 0 0
 Key 2 A M GotoPage 1 0
 Key 3 A M GotoPage 0 1
@@ -105,6 +106,7 @@ AddToFunc StartFunction
 # + I Module FvwmWinList
 # + I Exec exec `qiv -x -m /home/as/Pictures/bg11.png`
 # + I Exec exec `fvwm-root /home/as/Pictures/bg11.png`
++ I Exec exec `xmodmap -e "pointer = 3 2 1"`
 # + I Module FvwmPager
 
 AddToFunc InitFunction
