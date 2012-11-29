@@ -56,9 +56,13 @@ Key 4 A M GotoPage 1 1
 Key 5 A M GotoPage 0 2
 Key 6 A M GotoPage 1 2
 Key Up A M GotoPage 0w -1w
+Key k A M GotoPage 0w -1w
 Key Down A M GotoPage 0w +1w
+Key j A M GotoPage 0w +1w
 Key Left A M GotoPage -1w 0w
+Key h A M GotoPage -1w 0w
 Key Right A M GotoPage +1w 0w
+Key l A M GotoPage +1w 0w
 Key 9 A M Maximize grow grow
 Key 0 A M Maximize 100 100
 Key 1 A C MoveToPage 0 0
