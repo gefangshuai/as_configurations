@@ -125,7 +125,7 @@ AddToMenu MenuFvwmRoot  "$[gt.Menu]"             Title
 +                       "&3. IM"                Popup MenuIM
 +                       "&3. Tool"              Popup MenuTool
 +                       ""              Nop
-+                       "&L. lock"              Exec exec xtrlock
++                       "&X. lock"              Exec exec xtrlock
 +                       ""              Nop
 +                       "&0. $[gt.Fvwm]"        Popup MenuQuitVerify
 
@@ -204,12 +204,12 @@ AddToMenu MenuBrowser
 + "&A. $[gt.Pcmanfm]"          Exec exec pcmanfm
 # + "&R. $[gt.Rapidsvn]"         Exec exec rapidsvn
 + ""                         Nop
-+ "&L. $[gt.Libreoffice]"      Exec exec libreoffice
-+ "&E. $[gt.Evince]"           Exec exec evince
-+ "&P. $[gt.Xpdf]"             Exec exec xpdf
++ "&P. $[gt.Pgadmin3]"         Exec exec pgadmin3
 + ""                         Nop
-+ "&H. $[gt.Chmsee]"           Exec exec chmsee 
-+ "&M. $[gt.Xchm]"             Exec exec xchm
++ "&O. $[gt.Libreoffice]"      Exec exec libreoffice
++ "&E. $[gt.Evince]"           Exec exec evince
++ ""                         Nop
++ "&M. $[gt.Chmsee]"           Exec exec chmsee 
 + ""                         Nop
 + "&S. $[gt.Shotwell]"         Exec exec shotwell
 + "&G. $[gt.Gqview]"           Exec exec gqview
@@ -223,7 +223,7 @@ AddToMenu MenuQuitVerify "$[gt.Handle Fvwm]" Title
 + ""                         Nop
 + "&O. $[gt.FvwmConsole]"          Module FvwmConsole
 + ""                         Nop
-+ "&K. xkill"                  Exec exec xkill
++ "&Z. xkill"                  Exec exec xkill
 + ""                         Nop
 + "&Q. $[gt.Really Quit]"      Quit
 + ""                         Nop
