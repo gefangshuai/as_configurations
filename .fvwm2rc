@@ -207,8 +207,8 @@ AddToMenu MenuBrowser
 + "&P. $[gt.Pgadmin3]"         Exec exec pgadmin3
 + ""                         Nop
 + "&O. $[gt.Libreoffice]"      Exec exec libreoffice
++ "&B. $[gt.Calibre]"          Exec exec calibre
 + "&E. $[gt.Evince]"           Exec exec evince
-+ ""                         Nop
 + "&M. $[gt.Chmsee]"           Exec exec chmsee 
 + ""                         Nop
 + "&S. $[gt.Shotwell]"         Exec exec shotwell

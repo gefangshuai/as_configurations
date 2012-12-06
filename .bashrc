@@ -110,12 +110,18 @@ alias lt="ls -lhtF"
 alias cp="cp -v"
 alias mv="mv -v"
 alias c="clear"
-alias m="mplayer"
 alias v='vim -c "NERDTree"'
-alias x='startx'
+alias m="mplayer"
+#alias shutdownmongodb="mongo admin --eval 'db.shutdownServer()'"
+#alias x='startx'
 alias toff='synclient touchpadoff=1'
 alias ton='synclient touchpadoff=0'
 
 export XMODIFIERS="@im=ibus"
 export GTK_IM_MODULE="ibus"
 export QT_IM_MODULE="ibus"
+
+#source /etc/profile
+
+#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#sh /etc/profile.d/rvm.sh
