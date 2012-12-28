@@ -175,10 +175,11 @@ AddToMenu MenuTool
 + "&W. $[gt.wicd-client]"      Exec exec wicd-client -n
 + "&D. $[gt.Dia]"              Exec exec dia
 + "&E. $[gt.gedit]"            Exec exec gedit
-+ "&G. $[gt.gvim]"             Exec exec gvim
-+ "&R. $[gt.rhythmbox]"        Exec exec rhythmbox
-# + "&F. $[gt.freemind]"         Exec exec freemind
-# + "&G. $[gt.Goldendict]"       Exec exec goldendict
+#+ "&G. $[gt.gvim]"             Exec exec gvim
+#+ "&R. $[gt.rhythmbox]"        Exec exec rhythmbox
+#+ "&F. $[gt.freemind]"         Exec exec freemind
++ "&R. $[gt.arandr]"           Exec exec arandr
+ + "&G. $[gt.Goldendict]"      Exec exec goldendict
 # + "&P. $[gt.Gpick]"            Exec exec gpick
 + "&S. $[gt.Shutter]"          Exec exec shutter
 + "&V. $[gt.Virtualbox]"       Exec exec virtualbox
