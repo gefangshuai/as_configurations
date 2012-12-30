@@ -30,7 +30,6 @@ Style XTerm       Icon xterm.xpm, SloppyFocus, IconBox -70 1 -1 -140
 Style rxvt        Icon term.xpm, SloppyFocus, IconBox -70 1 -1 -140
 Style rxvt        MWMBorder, MWMButtons
 Style Firefox     StartsOnPage  0 1
-Style Chromium    StartsOnPage  0 2
 Style chromium-browser    StartsOnPage  0 2
 
 
@@ -39,6 +38,7 @@ Key F1 A M Popup MenuFvwmRoot
 Key F2 A M Exec exec urxvt
 Key F3 A M Move
 Key F4 A M Resize
+Key F8 A M Stick
 Key F12 A M Close
 Key Page_Up A M Raise
 Key Page_Down A M Lower
