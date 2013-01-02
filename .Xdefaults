@@ -2,6 +2,9 @@ URxvt*imlocale: zh_CN
 XTerm*locale: true
 URxvt.multichar_encoding:utf8
 urxvt*termName: rxvt
+URxvt.urgentOnBell: True
+URxvt*loginShell: true
+XTerm*loginShell: true
 
 !! 设置输入法的输入风格。不设置这个的话，启动会很慢。
 Rxvt.preeditType:Root
