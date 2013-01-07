@@ -1,0 +1,103 @@
+#############################################################
+################### OFFICIAL UBUNTU REPOS ###################
+#############################################################
+
+###### Ubuntu Main Repos
+deb http://jp.archive.ubuntu.com/ubuntu/ precise main restricted universe multiverse 
+deb-src http://jp.archive.ubuntu.com/ubuntu/ precise main restricted universe multiverse 
+
+###### Ubuntu Update Repos
+deb http://jp.archive.ubuntu.com/ubuntu/ precise-security main restricted universe multiverse 
+deb http://jp.archive.ubuntu.com/ubuntu/ precise-updates main restricted universe multiverse 
+deb-src http://jp.archive.ubuntu.com/ubuntu/ precise-security main restricted universe multiverse 
+deb-src http://jp.archive.ubuntu.com/ubuntu/ precise-updates main restricted universe multiverse 
+
+##############################################################
+##################### UNOFFICIAL  REPOS ######################
+##############################################################
+
+###### 3rd Party Binary Repos
+
+#### Audacity - http://audacity.sourceforge.net/
+## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BB901940
+deb http://ppa.launchpad.net/audacity-team/daily/ubuntu precise main 
+
+#### Cairo Composite Manager - http://cairo-compmgr.tuxfamily.org/
+## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 75198A89
+deb http://ppa.launchpad.net/shnatsel/cairo-compmgr/ubuntu precise main
+
+#### Google Chrome Browser - http://www.google.com/linuxrepositories/
+## Run this command: wget -q https://dl-ssl.google.com/linux/linux_signing_key.pub -O- | sudo apt-key add -
+#deb http://dl.google.com/linux/chrome/deb/ stable main
+
+#### Google Earth - http://www.google.com/linuxrepositories/
+## Run this command: wget -q https://dl-ssl.google.com/linux/linux_signing_key.pub -O- | sudo apt-key add -
+#deb http://dl.google.com/linux/earth/deb/ stable main
+
+#### Google Linux Software Repositories - http://www.google.com/linuxrepositories/
+## Run this command: wget -q https://dl-ssl.google.com/linux/linux_signing_key.pub -O- | sudo apt-key add -
+#deb http://dl.google.com/linux/deb/ stable non-free
+
+#### LibreOffice - http://www.documentfoundation.org/download/
+## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1378B444
+deb http://ppa.launchpad.net/libreoffice/ppa/ubuntu precise main
+
+#### Miro HD Video Player - http://www.getmiro.com/
+## Run this command:  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 2D75E850
+deb http://ppa.launchpad.net/pcf/miro-releases/ubuntu precise main
+
+#### MongoDB - http://www.mongodb.org/
+## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
+deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen
+
+#### Opera - http://www.opera.com/
+## Run this command: sudo wget -O - http://deb.opera.com/archive.key | sudo apt-key add -
+deb http://deb.opera.com/opera/ stable non-free
+
+#### Pidgin - http://pidgin.im
+## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A1F196A8
+deb http://ppa.launchpad.net/pidgin-developers/ppa/ubuntu precise main
+
+#### Tor: anonymity online - http://www.torproject.org/
+## Run this command: gpg --keyserver subkeys.pgp.net --recv 886DDD89 && gpg --export --armor 94C09C7F  | sudo apt-key add -
+#deb http://deb.torproject.org/torproject.org precise main
+#### Tor: anonymity online (Source) - http://www.torproject.org/
+## Run this command: gpg --keyserver subkeys.pgp.net --recv 886DDD89 && gpg --export --armor 94C09C7F  | sudo apt-key add -
+#deb-src http://deb.torproject.org/torproject.org precise main
+
+#### VirtualBox - http://www.virtualbox.org
+## Run this command: wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+deb http://download.virtualbox.org/virtualbox/debian precise contrib
+
+#### X Updates - https://launchpad.net/~ubuntu-x-swat/+archive/x-updates/
+## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AF1CDFA9
+deb http://ppa.launchpad.net/ubuntu-x-swat/x-updates/ubuntu precise main
+
+
+####### 3rd Party Source Repos
+
+#### Audacity (Source) - http://audacity.sourceforge.net/
+## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BB901940
+deb-src http://ppa.launchpad.net/audacity-team/daily/ubuntu precise main 
+
+#### Cairo Composite Manager (Source) - http://cairo-compmgr.tuxfamily.org/
+## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 75198A89
+deb-src http://ppa.launchpad.net/shnatsel/cairo-compmgr/ubuntu precise main
+
+#### LibreOffice (Source) - http://www.documentfoundation.org/download/
+## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1378B444
+deb-src http://ppa.launchpad.net/libreoffice/ppa/ubuntu precise main
+
+#### Miro HD Video Player (Source) - http://www.getmiro.com/
+## Run this command:  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 2D75E850
+deb-src http://ppa.launchpad.net/pcf/miro-releases/ubuntu precise main
+
+#### Pidgin (Source) - http://pidgin.im
+## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A1F196A8
+deb-src http://ppa.launchpad.net/pidgin-developers/ppa/ubuntu precise main
+
+#### X Updates (Source) - https://launchpad.net/~ubuntu-x-swat/+archive/x-updates/
+## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AF1CDFA9
+deb-src http://ppa.launchpad.net/ubuntu-x-swat/x-updates/ubuntu precise main
+
+

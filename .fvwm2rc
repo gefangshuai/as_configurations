@@ -71,10 +71,14 @@ Key 3 A C MoveToPage 0 1
 Key 4 A C MoveToPage 1 1
 Key 5 A C MoveToPage 0 2
 Key 6 A C MoveToPage 1 2
-Key Up A C MoveToPage 0w -1w
-Key Down A C MoveToPage 0w +1w
-Key Left A C MoveToPage -1w 0w
-Key Right A C MoveToPage +1w 0w
+# Key Up A C MoveToPage 0w -1w
+# Key Down A C MoveToPage 0w +1w
+# Key Left A C MoveToPage -1w 0w
+# Key Right A C MoveToPage +1w 0w
+Key k A C MoveToPage 0w -1w
+Key j A C MoveToPage 0w +1w
+Key h A C MoveToPage -1w 0w
+Key l A C MoveToPage +1w 0w
 
 # Basic Mouse controls:
 Mouse 1 T   A FuncFvwmRaiseLowerX Move
