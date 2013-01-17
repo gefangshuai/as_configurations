@@ -13,8 +13,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=20000
+HISTFILESIZE=40000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -101,6 +101,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+### added by Andersen
+
 # some more ls aliases
 alias l="ls -F"
 alias ll="ls -lF"
@@ -121,7 +123,5 @@ export XMODIFIERS="@im=ibus"
 export GTK_IM_MODULE="ibus"
 export QT_IM_MODULE="ibus"
 
-#source /etc/profile
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-#sh /etc/profile.d/rvm.sh

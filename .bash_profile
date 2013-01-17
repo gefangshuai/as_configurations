@@ -29,3 +29,10 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
 	# Could use xinit instead of startx
 	#exec xinit -- /usr/bin/X -nolisten tcp vt7
 fi
+
+
+# for torquebox
+# export TORQUEBOX_HOME=~/Tools/torquebox-2.2.0
+# export JBOSS_HOME=$TORQUEBOX_HOME/jboss
+# export JRUBY_HOME=$TORQUEBOX_HOME/jruby
+# export PATH=$JRUBY_HOME/bin:$PATH
