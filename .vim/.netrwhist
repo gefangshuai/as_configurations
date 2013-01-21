@@ -1,6 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/as/scripts/as_user/lib/as_user'
-let g:netrw_dirhist_2='/home/as/bbtang/askjane/app/controllers'
-let g:netrw_dirhist_3='/home/as/bbtang/askjane/config/deploy'
-let g:netrw_dirhist_4='/home/as/.vimperator'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/as/scripts_public/httparty/lib/httparty'
