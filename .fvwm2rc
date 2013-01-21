@@ -204,6 +204,7 @@ DestroyMenu MenuBrowser
 AddToMenu MenuBrowser
 + "&F. $[gt.Firefox]"          Exec exec firefox
 + "&C. $[gt.Chromium]"         Exec exec chromium-browser
++ "&O. $[gt.Opera]"            Exec exec opera
 + "&U. $[gt.Uzbl]"             Exec exec uzbl-browser
 + ""                         Nop
 + "&X. $[gt.Xfe]"              Exec exec xfe
@@ -212,7 +213,7 @@ AddToMenu MenuBrowser
 + ""                         Nop
 + "&P. $[gt.Pgadmin3]"         Exec exec pgadmin3
 + ""                         Nop
-+ "&O. $[gt.Libreoffice]"      Exec exec libreoffice
++ "&R. $[gt.Libreoffice]"      Exec exec libreoffice
 + "&B. $[gt.Calibre]"          Exec exec calibre
 + "&E. $[gt.Evince]"           Exec exec evince
 + "&M. $[gt.Chmsee]"           Exec exec chmsee 
