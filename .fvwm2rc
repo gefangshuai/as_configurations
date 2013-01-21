@@ -176,7 +176,7 @@ AddToMenu MenuTerminal
 
 DestroyMenu MenuTool
 AddToMenu MenuTool
-+ "&W. $[gt.wicd-client]"      Exec exec wicd-client -n
++ "&I. $[gt.import]"           Exec exec import ~/Pictures/temp/"`date +%Y_%m_%d_%H_%M_%S`.png"
 + "&D. $[gt.Dia]"              Exec exec dia
 + "&E. $[gt.gedit]"            Exec exec gedit
 #+ "&G. $[gt.gvim]"             Exec exec gvim
@@ -190,6 +190,7 @@ AddToMenu MenuTool
 + "&O. $[gt.Xosview]"          Exec exec xosview -page +battery -ints +net
 # + "&X. $[gt.xdiagnose]"        Exec exec xdiagnose
 + "&T. $[gt.Xclock]"           Exec exec xclock -update 1 -geometry 100x100-0+0
++ "&W. $[gt.wicd-client]"      Exec exec wicd-client -n
 
 DestroyMenu MenuIM
 AddToMenu MenuIM
