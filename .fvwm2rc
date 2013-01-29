@@ -80,7 +80,7 @@ Key j A CM MoveToPage 0w +1w
 Key h A CM MoveToPage -1w 0w
 Key l A CM MoveToPage +1w 0w
 
-Key i A C Exec exec import ~/Pictures/temp/"`date +%Y_%m_%d_%H_%M_%S`.png"
+Key i A CM Exec exec import ~/Pictures/temp/"`date +%Y_%m_%d_%H_%M_%S`.png"
 
 # Basic Mouse controls:
 Mouse 1 T   A FuncFvwmRaiseLowerX Move
