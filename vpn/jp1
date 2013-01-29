@@ -1,0 +1,17 @@
+pty "pptp 106.187.103.47 --nolaunchpppd"
+debug
+nodetach
+logfd 2
+noproxyarp
+ipparam asvpn
+remotename asvpn
+name as181920
+require-mppe-128
+nobsdcomp
+nodeflate
+lock
+noauth
+refuse-eap
+refuse-chap
+refuse-mschap
+
