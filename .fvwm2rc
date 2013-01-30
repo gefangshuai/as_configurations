@@ -184,8 +184,8 @@ AddToMenu MenuTool
 #+ "&G. $[gt.gvim]"             Exec exec gvim
 #+ "&R. $[gt.rhythmbox]"        Exec exec rhythmbox
 #+ "&F. $[gt.freemind]"         Exec exec freemind
-+ "&R. $[gt.arandr]"           Exec exec arandr
- + "&G. $[gt.Goldendict]"      Exec exec goldendict
++ "&A. $[gt.arandr]"           Exec exec arandr
++ "&G. $[gt.Goldendict]"      Exec exec goldendict
 # + "&P. $[gt.Gpick]"            Exec exec gpick
 + "&S. $[gt.Shutter]"          Exec exec shutter
 + "&V. $[gt.Virtualbox]"       Exec exec virtualbox
@@ -194,6 +194,7 @@ AddToMenu MenuTool
 + "&T. $[gt.Xclock]"           Exec exec xclock -update 1 -geometry 100x100-0+0
 + "&M. $[gt.Xmag]"             Exec exec xmag
 + "&W. $[gt.wicd-client]"      Exec exec wicd-client -n
++ "&R. $[gt.grun]"             Exec exec grun
 
 DestroyMenu MenuIM
 AddToMenu MenuIM
