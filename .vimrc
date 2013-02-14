@@ -46,3 +46,6 @@ augroup end
 " Disable WAI-ARIA attribute support:
 " let g:html5_aria_attributes_complete = 0
 
+" for instant markdown
+" let g:instant_markdown_slow = 1
+
