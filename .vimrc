@@ -33,6 +33,10 @@ augroup filetype
   au! BufRead,BufNewFile *.proto setfiletype proto
 augroup end
 
+" for fuzzy finder
+noremap ,f :FufCoverageFile!<CR>
+noremap ,b :FufBuffer!<CR>
+
 " for html5
 " Disable event-handler attributes support:
 " let g:html5_event_handler_attributes_complete = 0
