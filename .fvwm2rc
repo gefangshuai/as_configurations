@@ -92,7 +92,6 @@ Key i A CM Exec exec import ~/Pictures/temp/"`date +%Y_%m_%d_%H_%M_%S`.png"
 Mouse 1 T   A FuncFvwmRaiseLowerX Move
 Mouse 1 FS  A FuncFvwmRaiseLowerX Resize
 Mouse 2 FST A FuncFvwmRaiseLowerX Move
-Mouse 3 W A FuncFvwmRaiseLowerX Move
 AddToFunc FuncFvwmRaiseLowerX
 + I Raise
 + M $0
