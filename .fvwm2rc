@@ -134,8 +134,9 @@ DestroyMenu MenuFvwmRoot
 AddToMenu MenuFvwmRoot  "$[gt.Menu]"             Title
 +                       "&1. CUI"               Popup MenuTerminal
 +                       "&2. Browser"           Popup MenuBrowser
-+                       "&3. IM"                Popup MenuIM
-+                       "&3. Tool"              Popup MenuTool
++                       "&3. Editor"            Popup MenuEditor
++                       "&4. IM"                Popup MenuIM
++                       "&5. Tool"              Popup MenuTool
 +                       ""              Nop
 +                       "&X. lock"              Exec exec xtrlock
 +                       ""              Nop
@@ -186,8 +187,6 @@ DestroyMenu MenuTool
 AddToMenu MenuTool
 + "&I. $[gt.import]"           Exec exec import ~/Pictures/temp/"`date +%Y_%m_%d_%H_%M_%S`.png"
 + "&D. $[gt.Dia]"              Exec exec dia
-+ "&E. $[gt.gedit]"            Exec exec gedit
-#+ "&G. $[gt.gvim]"             Exec exec gvim
 #+ "&R. $[gt.rhythmbox]"        Exec exec rhythmbox
 #+ "&F. $[gt.freemind]"         Exec exec freemind
 + "&A. $[gt.arandr]"           Exec exec arandr
@@ -201,6 +200,12 @@ AddToMenu MenuTool
 + "&M. $[gt.Xmag]"             Exec exec xmag
 + "&W. $[gt.wicd-client]"      Exec exec wicd-client -n
 + "&R. $[gt.grun]"             Exec exec grun
+
+DestroyMenu MenuEditor
+AddToMenu MenuEditor
++ "&G. $[gt.gedit]"            Exec exec gedit
++ "&V. $[gt.gvim]"             Exec exec gvim
++ "&E. $[gt.eclipse]"          Exec exec eclipse
 
 DestroyMenu MenuIM
 AddToMenu MenuIM
