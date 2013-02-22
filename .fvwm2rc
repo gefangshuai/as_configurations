@@ -241,15 +241,15 @@ DestroyMenu MenuQuitVerify
 AddToMenu MenuQuitVerify "$[gt.Handle Fvwm]" Title
 + "&R. $[gt.Refresh Screen]"   Refresh
 + "&A. $[gt.Restart]"          Restart
-+ "&X. $[gt.Just an Xterm]"    Restart xterm -n '"X Console"' -T '"X Console"'
+#+ "&X. $[gt.Just an Xterm]"    Restart xterm -n '"X Console"' -T '"X Console"'
 + ""                         Nop
 + "&O. $[gt.FvwmConsole]"          Module FvwmConsole
 + ""                         Nop
-+ "&Z. xkill"                  Exec exec xkill
++ "&K. xkill"                  Exec exec xkill
 + ""                         Nop
 + "&Q. $[gt.Really Quit]"      Quit
-+ ""                         Nop
-+ "&N. $[gt.No, Don't Quit]" Nop
+#+ ""                         Nop
+#+ "&N. $[gt.No, Don't Quit]" Nop
 
 ################## FvwmButtons button-bar ################################
 # DestroyModuleConfig FvwmButtons: *
