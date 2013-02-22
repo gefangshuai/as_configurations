@@ -220,7 +220,7 @@ AddToMenu MenuBrowser
 + "&F. $[gt.Firefox]"          Exec exec firefox
 + "&C. $[gt.Chromium]"         Exec exec chromium-browser
 + "&R. $[gt.Opera]"            Exec exec opera
-+ "&U. $[gt.Uzbl]"             Exec exec uzbl-browser
+#+ "&U. $[gt.Uzbl]"             Exec exec uzbl-browser
 + ""                         Nop
 + "&X. $[gt.Xfe]"              Exec exec xfe
 + "&A. $[gt.Pcmanfm]"          Exec exec pcmanfm
