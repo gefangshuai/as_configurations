@@ -196,7 +196,7 @@ AddToMenu MenuTool
 + "&V. $[gt.Virtualbox]"       Exec exec virtualbox
 + "&O. $[gt.Xosview]"          Exec exec xosview -page +battery -ints +net
 # + "&X. $[gt.xdiagnose]"        Exec exec xdiagnose
-+ "&T. $[gt.Xclock]"           Exec exec xclock -update 1 -geometry 100x100-0+0
++ "&T. $[gt.Xclock]"           Exec exec xclock -update 1 -geometry 100x100-0-0
 + "&M. $[gt.Xmag]"             Exec exec xmag
 + "&W. $[gt.wicd-client]"      Exec exec wicd-client -n
 + "&R. $[gt.grun]"             Exec exec grun
