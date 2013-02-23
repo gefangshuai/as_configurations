@@ -3,14 +3,14 @@
 #############################################################
 
 ###### Ubuntu Main Repos
-deb http://jp.archive.ubuntu.com/ubuntu/ precise main restricted universe multiverse 
-deb-src http://jp.archive.ubuntu.com/ubuntu/ precise main restricted universe multiverse 
+deb http://jp.archive.ubuntu.com/ubuntu/ precise main restricted universe multiverse
+deb-src http://jp.archive.ubuntu.com/ubuntu/ precise main restricted universe multiverse
 
 ###### Ubuntu Update Repos
-deb http://jp.archive.ubuntu.com/ubuntu/ precise-security main restricted universe multiverse 
-deb http://jp.archive.ubuntu.com/ubuntu/ precise-updates main restricted universe multiverse 
-deb-src http://jp.archive.ubuntu.com/ubuntu/ precise-security main restricted universe multiverse 
-deb-src http://jp.archive.ubuntu.com/ubuntu/ precise-updates main restricted universe multiverse 
+deb http://jp.archive.ubuntu.com/ubuntu/ precise-security main restricted universe multiverse
+deb http://jp.archive.ubuntu.com/ubuntu/ precise-updates main restricted universe multiverse
+deb-src http://jp.archive.ubuntu.com/ubuntu/ precise-security main restricted universe multiverse
+deb-src http://jp.archive.ubuntu.com/ubuntu/ precise-updates main restricted universe multiverse
 
 ##############################################################
 ##################### UNOFFICIAL  REPOS ######################
@@ -20,7 +20,7 @@ deb-src http://jp.archive.ubuntu.com/ubuntu/ precise-updates main restricted uni
 
 #### Audacity - http://audacity.sourceforge.net/
 ## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BB901940
-deb http://ppa.launchpad.net/audacity-team/daily/ubuntu precise main 
+deb http://ppa.launchpad.net/audacity-team/daily/ubuntu precise main
 
 #### Cairo Composite Manager - http://cairo-compmgr.tuxfamily.org/
 ## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 75198A89
@@ -28,15 +28,15 @@ deb http://ppa.launchpad.net/shnatsel/cairo-compmgr/ubuntu precise main
 
 #### Google Chrome Browser - http://www.google.com/linuxrepositories/
 ## Run this command: wget -q https://dl-ssl.google.com/linux/linux_signing_key.pub -O- | sudo apt-key add -
-#deb http://dl.google.com/linux/chrome/deb/ stable main
+# deb http://dl.google.com/linux/chrome/deb/ stable main
 
 #### Google Earth - http://www.google.com/linuxrepositories/
 ## Run this command: wget -q https://dl-ssl.google.com/linux/linux_signing_key.pub -O- | sudo apt-key add -
-#deb http://dl.google.com/linux/earth/deb/ stable main
+# deb http://dl.google.com/linux/earth/deb/ stable main
 
 #### Google Linux Software Repositories - http://www.google.com/linuxrepositories/
 ## Run this command: wget -q https://dl-ssl.google.com/linux/linux_signing_key.pub -O- | sudo apt-key add -
-#deb http://dl.google.com/linux/deb/ stable non-free
+# deb http://dl.google.com/linux/deb/ stable non-free
 
 #### LibreOffice - http://www.documentfoundation.org/download/
 ## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1378B444
@@ -60,10 +60,10 @@ deb http://ppa.launchpad.net/pidgin-developers/ppa/ubuntu precise main
 
 #### Tor: anonymity online - http://www.torproject.org/
 ## Run this command: gpg --keyserver subkeys.pgp.net --recv 886DDD89 && gpg --export --armor 94C09C7F  | sudo apt-key add -
-#deb http://deb.torproject.org/torproject.org precise main
+# deb http://deb.torproject.org/torproject.org precise main
 #### Tor: anonymity online (Source) - http://www.torproject.org/
 ## Run this command: gpg --keyserver subkeys.pgp.net --recv 886DDD89 && gpg --export --armor 94C09C7F  | sudo apt-key add -
-#deb-src http://deb.torproject.org/torproject.org precise main
+# deb-src http://deb.torproject.org/torproject.org precise main
 
 #### VirtualBox - http://www.virtualbox.org
 ## Run this command: wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
@@ -78,7 +78,7 @@ deb http://ppa.launchpad.net/ubuntu-x-swat/x-updates/ubuntu precise main
 
 #### Audacity (Source) - http://audacity.sourceforge.net/
 ## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BB901940
-deb-src http://ppa.launchpad.net/audacity-team/daily/ubuntu precise main 
+deb-src http://ppa.launchpad.net/audacity-team/daily/ubuntu precise main
 
 #### Cairo Composite Manager (Source) - http://cairo-compmgr.tuxfamily.org/
 ## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 75198A89
@@ -100,4 +100,6 @@ deb-src http://ppa.launchpad.net/pidgin-developers/ppa/ubuntu precise main
 ## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AF1CDFA9
 deb-src http://ppa.launchpad.net/ubuntu-x-swat/x-updates/ubuntu precise main
 
+deb http://archive.canonical.com/ precise partner
+deb-src http://archive.canonical.com/ precise partner
 
