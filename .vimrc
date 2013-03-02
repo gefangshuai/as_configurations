@@ -36,6 +36,7 @@ augroup end
 " for fuzzy finder
 noremap ,f :FufCoverageFile!<CR>
 noremap ,b :FufBuffer!<CR>
+noremap ,r :FufRenewCache<CR>
 
 " for html5
 " Disable event-handler attributes support:
