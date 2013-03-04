@@ -127,6 +127,7 @@ AddToFunc StartFunction
 
 AddToFunc InitFunction
 + I exec ibus-daemon -x -r -d
++ I FuncStartupPrograms
 # + I exec xsetroot -mod 2 2 -fg rgb:55/40/55 -bg rgb:70/50/70
 
 ######################## Menus ###################
@@ -193,7 +194,8 @@ AddToMenu MenuTool
 + "&G. $[gt.Goldendict]"      Exec exec goldendict
 # + "&P. $[gt.Gpick]"            Exec exec gpick
 + "&S. $[gt.Shutter]"          Exec exec shutter
-+ "&V. $[gt.Virtualbox]"       Exec exec virtualbox
++ "&B. $[gt.Virtualbox]"       Exec exec virtualbox
++ "&V. $[gt.Vym]"              Exec exec vym
 + "&O. $[gt.Xosview]"          Exec exec xosview -page +battery -ints +net
 # + "&X. $[gt.xdiagnose]"        Exec exec xdiagnose
 + "&T. $[gt.Xclock]"           Exec exec xclock -update 1 -geometry 100x100-0-0
@@ -271,6 +273,14 @@ DestroyModuleConfig FvwmWinList: *
 #*FvwmWinList: Geometry +1+1
 
 ######################## Functions ##########################
+DestroyFunc FuncStartupPrograms
+AddToFunc FuncStartupPrograms
++ I Exec exec xclock -update 1 -geometry 100x100-0-0
++ I Exec exec urxvt
+#+ I Exec exec urxvt -geometry 181x55
+#+ I Exec exec firefox
+#+ I Exec exec chromium-browser
+
 DestroyFunc FuncFvwmMailXmh
 AddToFunc FuncFvwmMailXmh
 + I Next [$0] Iconify false
