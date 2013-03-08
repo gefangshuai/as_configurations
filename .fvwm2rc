@@ -226,6 +226,7 @@ AddToMenu MenuBrowser
 + ""                         Nop
 + "&X. $[gt.Xfe]"              Exec exec xfe
 + "&A. $[gt.Pcmanfm]"          Exec exec pcmanfm
++ "&Z. $[gt.Filezilla]"        Exec exec filezilla
 # + "&R. $[gt.Rapidsvn]"         Exec exec rapidsvn
 + ""                         Nop
 + "&P. $[gt.Pgadmin3]"         Exec exec pgadmin3
