@@ -187,6 +187,7 @@ AddToMenu MenuTerminal
 DestroyMenu MenuTool
 AddToMenu MenuTool
 + "&I. $[gt.import]"           Exec exec import ~/Pictures/temp/"`date +%Y_%m_%d_%H_%M_%S`.png"
++ "&P. $[gt.gpick]"            Exec exec gpick
 + "&D. $[gt.Dia]"              Exec exec dia
 #+ "&R. $[gt.rhythmbox]"        Exec exec rhythmbox
 #+ "&F. $[gt.freemind]"         Exec exec freemind
