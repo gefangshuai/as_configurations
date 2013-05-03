@@ -1,4 +1,4 @@
-pty "pptp jp1.vpncloud.me --nolaunchpppd"
+pty "pptp hk2.vpncloud.me --nolaunchpppd"
 debug
 nodetach
 logfd 2
