@@ -334,3 +334,9 @@ AddToFunc FuncFvwmFocusPolicyChange
 + I Style * $0
 + I Recapture
 
+DestroyFunc WindowListFunc
+AddToFunc WindowListFunc
++ I Iconify off
++ I FlipFocus
++ I Raise
++ I WarpToWindow 50 50
