@@ -340,3 +340,10 @@ AddToFunc WindowListFunc
 + I FlipFocus
 + I Raise
 + I WarpToWindow 50 50
+
+DestroyFunc UrgencyFunc
+AddToFunc UrgencyFunc
++ I Iconify off 
++ I FlipFocus
++ I Raise
++ I WarpToWindow 50 50
