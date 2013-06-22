@@ -225,7 +225,6 @@ AddToMenu MenuBrowser
 #+ "&U. $[gt.Uzbl]"             Exec exec uzbl-browser
 + ""                         Nop
 + "&X. $[gt.Xfe]"              Exec exec xfe
-+ "&A. $[gt.Pcmanfm]"          Exec exec pcmanfm
 + "&Z. $[gt.Filezilla]"        Exec exec filezilla
 # + "&R. $[gt.Rapidsvn]"         Exec exec rapidsvn
 + ""                         Nop
