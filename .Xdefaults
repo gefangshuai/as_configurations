@@ -49,7 +49,8 @@ Rxvt.color12:DodgerBlue
 !! Tab切换 :: SHIFT+LEFT/SHIFT+RIGHT
 !! 移动Tab顺序 :: CTRL+LEFT/CTRL+RIGHT
 !! 新建Tab :: SHIFT+DOWN
-URxvt.perl-ext-common: default,tabbed
+URxvt.perl-ext-common: default,tabbed,fullscreen
+URxvt.keysym.F11:  perl:fullscreen:switch
 
 
 !! 默认启动utf8支持，可以通过ESC键来开关。
