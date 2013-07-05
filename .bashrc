@@ -103,6 +103,8 @@ fi
 
 ### added by Andersen
 
+PS1="\t $PS1"
+
 # some more ls aliases
 alias l="ls -F"
 alias ll="ls -lF"
@@ -125,3 +127,6 @@ export QT_IM_MODULE="ibus"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
