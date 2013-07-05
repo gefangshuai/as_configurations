@@ -13,7 +13,7 @@ set confirm
 set completeopt=longest,menu
 set tags=/home/andersen/.vim/tags
 set grepprg=grep\ -nH\ $*
-set fencs=utf-8,gbk,big5,euc-jp,utf-16le
+set fencs=utf-8,gbk,big5,euc-jp,shift-jis,utf-16le
 set fenc=utf-8 enc=utf-8 tenc=utf-8
 
 filetype plugin indent on
