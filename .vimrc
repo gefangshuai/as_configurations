@@ -13,6 +13,9 @@ set confirm
 set completeopt=longest,menu
 set tags=/home/andersen/.vim/tags
 set grepprg=grep\ -nH\ $*
+set fencs=utf-8,gbk,big5,euc-jp,utf-16le
+set fenc=utf-8 enc=utf-8 tenc=utf-8
+
 filetype plugin indent on
 set ofu=syntaxcomplete#Complete
 autocmd FileType ruby set shiftwidth=2 | set expandtab
@@ -30,7 +33,8 @@ au BufWritePost *.coffee silent CoffeeMake! -b -o /tmp | cwindow | redraw!
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 au BufNewFile,BufRead Capfile	setf ruby
 augroup filetype
-  au! BufRead,BufNewFile *.proto setfiletype proto
+	au! BufRead,BufNewFile *.proto setfiletype proto
+	au BufNewFile,BufRead *.prawn setfiletype ruby
 augroup end
 
 " for fuzzy finder
