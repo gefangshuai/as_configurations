@@ -103,8 +103,9 @@ fi
 
 ### added by Andersen
 
-PS1="\t $PS1"
-
+#PS1="\t $PS1"
+PS1="\$(date +%Y-%m-%d\ %k:%M:%S) $PS1"
+ 
 # some more ls aliases
 alias l="ls -F"
 alias ll="ls -lF"
