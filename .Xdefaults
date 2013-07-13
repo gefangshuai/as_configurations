@@ -61,9 +61,9 @@ URxvt.keysym.F11:  perl:fullscreen:switch
 !! XTerm*faceNameDoublesize:lihei pro-10:charwidth=16
 
 !! 不要scrollbar
-!! URxvt.scrollBar:False
+URxvt.scrollBar:False
 !! URxvt.scrollWithBuffer: false
-!! URxvt.saveLines:3000
+URxvt.saveLines:10000
 !! 这个相当于css中的padding
 !! URxvt.internalBorder: 4
 
